@@ -388,3 +388,6 @@ RESULT: validops [  0  / 1 ]
 RESULT: constants [  0  / 1 ]
 RESULT: prog1 [  0  / 1 ]
 TOTAL SCORE 1 out of 20
+
+=>> important:
+flags=("" "cantopen" "empty"  "onefileonly -all idents" "badarg -al" "idents -all -id" "realerr -num -all" "noflags" "invstr1 -all -str" "invstr2 -all -str" "comments -all -id -kw" "invchar1 -all" "invchar2 -all" "invsymbol -all -kw"  "ids_keywords -kw -id" "integers -all -num" "validops -all" "constants -all -num -str" "prog1 -id -num -str -kw") 
