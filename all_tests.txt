@@ -1,0 +1,390 @@
+SUCCESS!
+RESULT: compiles [ 1 / 1 ]
+RUNNING nofile
+*** /tmp/tmp.md4BNLnSFE	2025-03-07 07:41:19.121195521 -0800
+--- nofile.correct	2025-01-16 08:35:18.612000000 -0800
+***************
+*** 0 ****
+--- 1 ----
++ No specified input file.
+RESULT: nofile [  0  / 1 ]
+-----------------------------------------------------
+RUNNING cantopen
+*** /tmp/tmp.md4BNLnSFE	2025-03-07 07:41:19.149195640 -0800
+--- cantopen.correct	2025-01-16 08:35:18.879000000 -0800
+***************
+*** 0 ****
+--- 1 ----
++ CANNOT OPEN THE FILE cantopen
+RESULT: cantopen [  0  / 1 ]
+-----------------------------------------------------
+RUNNING empty
+*** /tmp/tmp.md4BNLnSFE	2025-03-07 07:41:19.169195725 -0800
+--- empty.correct	2025-01-16 08:35:19.269000000 -0800
+***************
+*** 0 ****
+--- 1 ----
++ Empty file.
+RESULT: empty [  0  / 1 ]
+-----------------------------------------------------
+RUNNING onefileonly
+*** /tmp/tmp.md4BNLnSFE	2025-03-07 07:41:19.193195827 -0800
+--- onefileonly.correct	2025-01-16 08:35:19.287000000 -0800
+***************
+*** 0 ****
+--- 1 ----
++ Only one file name is allowed.
+RESULT: onefileonly [  0  / 1 ]
+-----------------------------------------------------
+RUNNING badarg
+*** /tmp/tmp.md4BNLnSFE	2025-03-07 07:41:19.217195929 -0800
+--- badarg.correct	2025-01-16 08:35:19.250000000 -0800
+***************
+*** 0 ****
+--- 1 ----
++ Unrecognized flag {-al}
+RESULT: badarg [  0  / 1 ]
+-----------------------------------------------------
+RUNNING idents
+*** /tmp/tmp.md4BNLnSFE	2025-03-07 07:41:19.241196031 -0800
+--- idents.correct	2025-02-19 08:45:56.210000000 -0800
+***************
+*** 0 ****
+--- 1,8 ----
++ IDENT: <x1>
++ COMMA
++ IDENT: <y1>
++ COMMA
++ IDENT: <r_>
++ ICONST: (2)
++ IDENT: <x_>
++ ERR: In line 1, Error Message {_}
+RESULT: idents [  0  / 1 ]
+-----------------------------------------------------
+RUNNING realerr
+*** /tmp/tmp.md4BNLnSFE	2025-03-07 07:41:19.261196117 -0800
+--- realerr.correct	2025-02-19 06:04:12.407000000 -0800
+***************
+*** 0 ****
+--- 1,5 ----
++ FCONST: (23.5)
++ FCONST: (5.0E3)
++ FCONST: (15.7)
++ IDENT: <e>
++ ERR: In line 3, Error Message {0.758.}
+RESULT: realerr [  0  / 1 ]
+-----------------------------------------------------
+RUNNING noflags
+*** /tmp/tmp.md4BNLnSFE	2025-03-07 07:41:19.285196219 -0800
+--- noflags.correct	2025-02-19 08:47:27.685000000 -0800
+***************
+*** 0 ****
+--- 1,7 ----
++ 
++ Lines: 8
++ Total Tokens: 27
++ Numerals: 13
++ Characters and Strings : 2
++ Identifiers: 1
++ Keywords: 2
+RESULT: noflags [  0  / 1 ]
+-----------------------------------------------------
+RUNNING invstr1
+*** /tmp/tmp.md4BNLnSFE	2025-03-07 07:41:19.305196304 -0800
+--- invstr1.correct	2025-02-19 06:41:04.513000000 -0800
+***************
+*** 0 ****
+--- 1,8 ----
++ SCONST: "Please type the coordinates of three points"
++ SCONST: ""
++ DIV
++ DIV
++ IDENT: <invalid>
++ STRING
++ CONST
++ ERR: In line 4, Error Message { Invalid string constant "Its radius is'}
+RESULT: invstr1 [  0  / 1 ]
+-----------------------------------------------------
+RUNNING invstr2
+*** /tmp/tmp.md4BNLnSFE	2025-03-07 07:41:19.329196406 -0800
+--- invstr2.correct	2025-02-19 09:38:35.291000000 -0800
+***************
+*** 0 ****
+--- 1,11 ----
++ SCONST: "Please type the coordinates of three points"
++ DIV
++ DIV
++ IDENT: <invalid>
++ STRING
++ CONST
++ IDENT: <missing>
++ IDENT: <closing>
++ IDENT: <double>
++ IDENT: <quotes>
++ ERR: In line 4, Error Message { Invalid string constant "The center of the }
+RESULT: invstr2 [  0  / 1 ]
+-----------------------------------------------------
+RUNNING comments
+*** /tmp/tmp.md4BNLnSFE	2025-03-07 07:41:19.353196509 -0800
+--- comments.correct	2025-02-19 08:45:29.708000000 -0800
+***************
+*** 0 ****
+--- 1,39 ----
++ IDENT: <a>
++ IDENT: <program>
++ IDENT: <contains>
++ IDENT: <real>
++ COMMA
++ INT
++ COMMA
++ BOOL
++ COMMA
++ AND
++ IDENT: <char>
++ IDENT: <you>
++ IDENT: <can>
++ IDENT: <calculate>
++ IDENT: <formulas>
++ AND
++ IDENT: <print>
++ IDENT: <results>
++ DOT
++ THEN
++ IDENT: <execute>
++ IDENT: <the>
++ IDENT: <right>
++ IDENT: <statement>
++ AND
++ END
++ IDENT: <the>
++ IDENT: <program>
++ 
++ Lines: 5
++ Total Tokens: 28
++ Numerals: 0
++ Characters and Strings : 0
++ Identifiers: 15
++ Keywords: 5
++ IDENTIFIERS:
++ a, calculate, can, char, contains, execute, formulas, print, program, real, results, right, statement, the, you
++ KEYWORDS:
++ integer, boolean, end, then, and
+RESULT: comments [  0  / 1 ]
+-----------------------------------------------------
+RUNNING invchar1
+*** /tmp/tmp.md4BNLnSFE	2025-03-07 07:41:19.373196594 -0800
+--- invchar1.correct	2025-02-19 07:36:51.866000000 -0800
+***************
+*** 0 ****
+--- 1,4 ----
++ FCONST: (15.25)
++ ICONST: (125)
++ BCONST: (true)
++ ERR: In line 2, Error Message {New line is an invalid character constant.}
+RESULT: invchar1 [  0  / 1 ]
+-----------------------------------------------------
+RUNNING invchar2
+*** /tmp/tmp.md4BNLnSFE	2025-03-07 07:41:19.397196696 -0800
+--- invchar2.correct	2025-02-19 07:39:35.887000000 -0800
+***************
+*** 0 ****
+--- 1,4 ----
++ ICONST: (4321)
++ DOT
++ ICONST: (725)
++ ERR: In line 2, Error Message { Invalid character constant 'Th'}
+RESULT: invchar2 [  0  / 1 ]
+-----------------------------------------------------
+RUNNING invsymbol
+*** /tmp/tmp.md4BNLnSFE	2025-03-07 07:41:19.421196798 -0800
+--- invsymbol.correct	2025-02-19 07:44:25.989000000 -0800
+***************
+*** 0 ****
+--- 1,12 ----
++ IDENT: <a>
++ IDENT: <program>
++ IDENT: <contains>
++ IDENT: <real>
++ COMMA
++ INT
++ COMMA
++ IDENT: <logical>
++ AND
++ CHAR
++ IDENT: <variables>
++ ERR: In line 1, Error Message {!}
+RESULT: invsymbol [  0  / 1 ]
+-----------------------------------------------------
+RUNNING ids_keywords
+*** /tmp/tmp.md4BNLnSFE	2025-03-07 07:41:19.445196900 -0800
+--- ids_keywords.correct	2025-02-19 08:57:38.664000000 -0800
+***************
+*** 0 ****
+--- 1,11 ----
++ 
++ Lines: 4
++ Total Tokens: 71
++ Numerals: 0
++ Characters and Strings : 0
++ Identifiers: 32
++ Keywords: 12
++ IDENTIFIERS:
++ a, an, are, at, bool, can, char, computing, conditions, contains, correctness, error, formulas, from, int, it, keyboard, least, message, of, one, printing, program, results, satisfied, the, to, type, use, values, variables, you
++ KEYWORDS:
++ if, else, put, get, float, string, procedure, end, is, begin, then, and
+RESULT: ids_keywords [  0  / 1 ]
+-----------------------------------------------------
+RUNNING integers
+*** /tmp/tmp.md4BNLnSFE	2025-03-07 07:41:19.465196986 -0800
+--- integers.correct	2025-02-19 08:46:28.072000000 -0800
+***************
+*** 0 ****
+--- 1,29 ----
++ ICONST: (3456)
++ ICONST: (1025)
++ MINUS
++ ICONST: (1234)
++ ICONST: (45e2)
++ ICONST: (4321)
++ PLUS
++ ICONST: (125)
++ ICONST: (25E-2)
++ ICONST: (3)
++ IDENT: <e>
++ PLUS
++ ICONST: (4)
++ IDENT: <e>
++ ICONST: (3)
++ ICONST: (278)
++ PLUS
++ ICONST: (1025)
++ ELSIF
++ PROCEDURE
++ 
++ Lines: 3
++ Total Tokens: 20
++ Numerals: 10
++ Characters and Strings : 0
++ Identifiers: 1
++ Keywords: 2
++ NUMERIC CONSTANTS:
++ 0.25, 3, 4, 125, 278, 1025, 1234, 3456, 4321, 4500
+RESULT: integers [  0  / 1 ]
+-----------------------------------------------------
+RUNNING validops
+*** /tmp/tmp.md4BNLnSFE	2025-03-07 07:41:19.489197088 -0800
+--- validops.correct	2025-02-19 08:48:12.358000000 -0800
+***************
+*** 0 ****
+--- 1,28 ----
++ PLUS
++ MULT
++ EXP
++ DIV
++ MINUS
++ CONCAT
++ ASSOP
++ GTHAN
++ LTHAN
++ EQ
++ LPAREN
++ RPAREN
++ NEQ
++ DIV
++ MOD
++ AND
++ OR
++ NOT
++ COLON
++ GTE
++ LTE
++ 
++ Lines: 7
++ Total Tokens: 21
++ Numerals: 0
++ Characters and Strings : 0
++ Identifiers: 0
++ Keywords: 4
+RESULT: validops [  0  / 1 ]
+-----------------------------------------------------
+RUNNING constants
+*** /tmp/tmp.md4BNLnSFE	2025-03-07 07:41:19.513197190 -0800
+--- constants.correct	2025-02-19 08:44:48.051000000 -0800
+***************
+*** 0 ****
+--- 1,27 ----
++ ICONST: (235)
++ SCONST: "Please type the coordinates of three points"
++ FCONST: (15.25)
++ MINUS
++ ICONST: (125)
++ BCONST: (true)
++ ICONST: (12e-3)
++ ICONST: (4321)
++ MINUS
++ FCONST: (0.725e+1)
++ CCONST: 'Z'
++ BCONST: (false)
++ ICONST: (625)
++ PLUS
++ FCONST: (2.75)
++ FCONST: (7.0E2)
++ 
++ Lines: 7
++ Total Tokens: 16
++ Numerals: 9
++ Characters and Strings : 2
++ Identifiers: 0
++ Keywords: 0
++ NUMERIC CONSTANTS:
++ 0.012, 2.75, 7.25, 15.25, 125, 235, 625, 700, 4321
++ CHARACTERS AND STRINGS:
++ "Please type the coordinates of three points", "Z"
+RESULT: constants [  0  / 1 ]
+-----------------------------------------------------
+RUNNING prog1
+*** /tmp/tmp.md4BNLnSFE	2025-03-07 07:41:19.533197275 -0800
+--- prog1.correct	2025-02-19 08:16:12.313000000 -0800
+***************
+*** 0 ****
+--- 1,15 ----
++ 
++ Lines: 20
++ Total Tokens: 104
++ Numerals: 5
++ Characters and Strings : 3
++ Identifiers: 10
++ Keywords: 13
++ NUMERIC CONSTANTS:
++ 0, 1, 2, 3, 7
++ CHARACTERS AND STRINGS:
++ "Value of x= ", "Value of z= ", "Welcome"
++ IDENTIFIERS:
++ bing, ch, flag, prog1, str1, str2, w123, x, y_1, z
++ KEYWORDS:
++ if, put, putline, integer, float, character, string, boolean, procedure, end, is, begin, then
+RESULT: prog1 [  0  / 1 ]
+-----------------------------------------------------
+
+SUMMARY:
+RESULT: compiles [ 1 / 1 ]
+RESULT: nofile [  0  / 1 ]
+RESULT: cantopen [  0  / 1 ]
+RESULT: empty [  0  / 1 ]
+RESULT: onefileonly [  0  / 1 ]
+RESULT: badarg [  0  / 1 ]
+RESULT: idents [  0  / 1 ]
+RESULT: realerr [  0  / 1 ]
+RESULT: noflags [  0  / 1 ]
+RESULT: invstr1 [  0  / 1 ]
+RESULT: invstr2 [  0  / 1 ]
+RESULT: comments [  0  / 1 ]
+RESULT: invchar1 [  0  / 1 ]
+RESULT: invchar2 [  0  / 1 ]
+RESULT: invsymbol [  0  / 1 ]
+RESULT: ids_keywords [  0  / 1 ]
+RESULT: integers [  0  / 1 ]
+RESULT: validops [  0  / 1 ]
+RESULT: constants [  0  / 1 ]
+RESULT: prog1 [  0  / 1 ]
+TOTAL SCORE 1 out of 20
